@@ -273,13 +273,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .s-curve-active .graph-donut-2 { stroke-dashoffset: 200 !important; }
 .s-curve-active .graph-donut-3 { stroke-dashoffset: 240 !important; }
 
-.s-curve-active .graph-bar-1 { height: 40%; }
-.s-curve-active .graph-bar-2 { height: 70%; }
-.s-curve-active .graph-bar-3 { height: 30%; }
-.s-curve-active .graph-bar-4 { height: 60%; }
-.s-curve-active .graph-bar-5 { height: 50%; }
-.s-curve-active .graph-bar-6 { height: 80%; }
-.s-curve-active .graph-bar-7 { height: 45%; }
+/* Dashboard Mini Charts Animations handled by GSAP */
 /* Animations */
 @keyframes blob {
   0% { transform: translate(0, 0) scale(1); }
@@ -450,4 +444,4 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   }
 }
 
-.s-curve-active .graph-bar-8 { height: 90%; }
+/* Bar chart heights handled by GSAP */

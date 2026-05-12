@@ -147,6 +147,18 @@ if (sCurveSection) {
         onEnter: () => {
             sCurveSection.classList.add('s-curve-active');
             if(typeof startLiveGraph === 'function') startLiveGraph();
+            
+            // Animate Bar Chart
+            const bars = sCurveSection.querySelectorAll('[class*="graph-bar-"]');
+            bars.forEach((bar, index) => {
+                const targetHeight = [40, 70, 30, 60, 50, 80, 45, 90][index % 8] + "%";
+                gsap.to(bar, {
+                    height: targetHeight,
+                    duration: 1.5,
+                    delay: index * 0.1,
+                    ease: "power2.out"
+                });
+            });
         },
         onLeaveBack: () => sCurveSection.classList.remove('s-curve-active')
     });
